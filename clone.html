@@ -7,27 +7,6 @@
 <body>
 
 <script type="text/javascript">
-var arr=[1,2,3,'f',2,'s',1];
-//var cloneArr1=arr.slice();
-//var cloneArr2=arr.concat();
-//console.log('为更改前：'+'\n'+arr+'\n'+cloneArr1+'\n'+cloneArr2); //是一样的
-
-//为了方便看出来这里每个更改不同元素
-//arr[0]='我是arr的第一项';
-//cloneArr1[1]='我是cloneArr1的第二项';
-//cloneArr2.push('我是cloneArr新添加');
-
-//我们在打印一下看看
-//console.log('为更改后：'+'\n'+arr+'\n'+cloneArr1+'\n'+cloneArr2);
-
-	
-
-
-
-//cloneArr.push('我是cloneArr');
-//console.log('arr：'+arr);  //["小明", 2, 3, "f", 2, "s", 1, "我是cloneArr"]
-//console.log('cloneArr：'+cloneArr);  //这个也变了 ["小明", 2, 3, "f", 2, "s", 1, "我是cloneArr"]
-
 function fn2(age){
 	alert(age);
 }
@@ -120,47 +99,6 @@ console.log(cloneObj2); //都没变
 //我们在看看复制的函数的情况
 
 cloneObj2['fn2'](16); //正常弹出16
-
-
-
-
-	// cloneObj=Object.assign({},obj);
-	//  console.log(obj);
-	// console.log(cloneObj); //这里成功复制了
-	// var c=new cloneObj['fn'];
-	// c.fnn(2,3);
-	// //我们改变一下试试
-
-	// obj['name']='小红红';
-	// obj['obj2']['name']='小明明';
-	// obj['li'][1]=900;
-	// console.log(obj); 
-	// console.log(cloneObj); // 从打印结果来看，除了函数之外其他的都可以深度拷贝
-
-
-// function fn1(age){
-// 	alert(age);
-// }
-// var b="bbbbbbbb";
-// var arr3=[1,2,3,4,5,6,7,['q','w','e','w'],8,{name:'小明',age:18,fn:function(name){alert(name);}},9,7,54,fn1,b];
-// var cloneArr1=JSON.parse(JSON.stringify(arr3))
-//console.log(arr3); //[1,2,3,4,5,6,7,['q','w','e','w'],8,{name:'小明',age:18,fn:function(name){alert(name);}},9,7,54,fn1,'bbbbbbbb'];
-//console.log(cloneArr1); //[1,2,3,4,5,6,7,['q','w','e','w'],8,{name:'小明',age:18},9,7,54,null,'bbbbbbbb'];这是发现fn函数和函数名没有被复制上
-
-//那我们改变一下值看一下
-// arr3[0]=101;
-// arr3[7][1]='qqqpppqqpp';
-// arr3[9]['name']='飞上天';
-
-// console.log(arr3); //[101,2,3,4,5,6,7,['q','qqqpppqqpp','e','w'],8,{name:'飞上天',age:18},9,7,54];
-// console.log(cloneArr1); //这样好像可以 [1,2,3,4,5,6,7,['q','w','e','w'],8,{name:'小明',age:18},9,7,54];
-
-
-
-
-
-
-//var arr3=[1,2,3,4,5,['a','c','d','m',['小明','小芳'],'w','o'],3,4,5,2];
 
 </script>
 </body>
